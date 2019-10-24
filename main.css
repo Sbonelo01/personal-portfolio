@@ -63,12 +63,7 @@ body {
  	box-shadow: 0 4px 8px 0 rgb(0,0,0,0.2),0 6px 20px 0 rgb(0,0,0,0.19);
  	float: right;
  	border-radius: 4px;
- 	/* height: 300px;
- 	width: 300px; */
  	background-color: white;
- 	/* position: relative; */
- 	/* left: 75px;
- 	top: 5rem; */
  	cursor: pointer;
  }
 
@@ -83,7 +78,7 @@ body {
  .grid-container {
 	display: grid;
 	grid-gap: 2em;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	padding-top: 5rem;
 	width: 95%;
 	margin: 0 auto;
