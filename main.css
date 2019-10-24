@@ -17,6 +17,10 @@ body {
 	background-size: cover;
 }
 
+@-ms-viewport{
+  width: device-width;
+}
+
 .social-links:hover {
 	color: orange !important;
 }
