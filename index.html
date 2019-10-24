@@ -1,0 +1,167 @@
+<!doctype HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="form.css">
+		<link rel="shortcut icon" href="images/sbo-favicon1.png">
+
+		<title>home</title>
+	</head>
+		<body>
+			<header>
+				<div class="navigation">
+					<nav>
+						<ul>
+							<button id="myBtn1" onclick="openModal('myModal1')" class="oranged">about<span class="oranged">.</span></button>
+							<button id="myBtn2" onclick="openModal('myModal2')" class="oranged">contact<span class="oranged">.</span></button>
+							<button id="myBtn3" onclick="openModal('myModal3')" class="oranged">work<span class="oranged">.</span></button>
+							<span class="logo"><img src="images/sbo1.png" width="60" height="60"><span>
+						</ul>
+					</nav>
+						<span class="some-text">
+								<h1>Hello,<br/> My Name is Sbonelo.<br/> I'm an aspiring<br/> Web Developer</h1>
+						</span>
+						<span class="social-links" style="position: fixed; top: 37%; right: 1%;">
+							<a href="#"><li><img src="images/facebook.png" height="40px" width="40px"></li><br/></a>
+							<a href="#"><li><img src="images/twitter.png" height="40px" width="40px"></li><br/></a>
+							<a href="#"><li><img src="images/instagram.png" height="40px" width="40px"></li><br/></a>
+							<a href="#"><li><img src="images/cat.png" height="40px" width="40px"></li></a>
+						</span>
+				</div>	
+
+				<div id="myModal1" class="modal" style="background-color: #FFA500;">
+					<div class="modal-header oranged">
+						<span class="oranged close" onclick="closeModal('myModal1')">x</span>
+						<!--<span class="modal-logo"><img src="images/sbo1.png" width="47" height="47"></span>-->
+							<h1 style="font-weight: strong">about me</h1>
+								</div>
+									<div class="modal-body">
+							
+										<span class="some-text">
+											<h1 style="color: white; text-shadow: black">Hello,<br/> My Name is <span class ="name">Sbonelo</span>.<br/> I'm an aspiring<br/> Web Developer.<br/>I am a self-taught coder<br/> and a lover of minimalistic <br> design.</h1>
+										</span>
+
+										<span>
+											<!--<img src="images/aboutback.jpg" width="1800px" height="600" style="opacity: 0.4">-->
+										</span>
+									</div>
+									<div class="modal-footer">
+										<p></p>
+									</div>
+							</div>
+					</div>
+				</div>
+			</span>
+		</span>
+			</div>
+
+
+			<div id="myModal2" class="modal" style="background-color: #FFA500; height: 150%; width: 90%;%;">
+				<div class="modal-header oranged">
+					<span class="close oranged" onclick="closeModal('myModal2')">x</span>
+						<!--<span class="modal-logo"><img src="images/sbo1.png" width="47" height="47"></span>-->
+							<h1>Hire Me</h1>
+								</div>
+									<div id="form-main">
+  										<div id="form-div">
+    										<form class="form" id="form1">
+      
+      											<p class="name">
+        											<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name"/>
+      											</p>
+      
+      											<p class="email">
+        											<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email"/>
+      											</p>
+      
+      											<p class="text">
+        											<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Tell me more about your project"></textarea>
+      											</p>
+      
+      
+      											<div class="submit">
+        										<input type="submit" value="SEND" id="button-blue"/>
+        										<div class="ease"></div>
+      											</div>
+    										</form>
+  										</div>
+									<div class="modal-footer">
+										<p></p>
+									</div>
+							</div>
+					</div>
+				</div>
+			
+				<div id="myModal3" class="modal" style="background-color: #FFA500; ">
+					<div class="modal-header oraged">
+						<span class="close oranged" onclick="closeModal('myModal3')">x</span>
+						<!--<span class="modal-logo"><img src="images/sbo1.png" width="47" height="47"></span>-->
+							<h1 style="color: orange">work</h1>
+								</div>
+									<div class="modal-body">
+										<div class="grid-container">
+  											<div class="grid-item"><h1><u>Skills</u></h1>
+													<p>JavaScript</p>
+													<p>Node.js</p>
+													<p>HTML5</p>
+													<p>CSS3</p>
+													<div>
+														<h2><u>SoftSkills</u></h2>
+															<p>Good Communicator</p>
+															<p>Teamplayer</p>
+															<p>Optimistic</p>
+															<p>Empathic</p>
+													</div>
+  											</div>
+  											<div class="grid-item"><h1><u>Resume</u></h1>
+												<h4><u>Education</u></h4>
+												<p>Avoca Sec. 2009 - 2013</p>
+												<p>UKZN (POLS & MECS) 2014-15</p>
+												<div>
+													<h4><u>Work Exp.</u></h4>
+													<p>Audi Centre</p>
+													<p>Umuzi.org</p>
+													<p>Innstyl</p>
+													<p>Jeep</p>
+												</div>
+  											</div>
+  			
+  											<div class="grid-item">
+												<h1><u>work</u></h1>
+  												<div class="gitimage">
+													<div class="modal-image-links">
+  														<a href="#"><img src="images/linkedin2.png" width="100px" height="100px"></a>
+													</div>
+													<div>  
+													  <a href="#"><img src="images/cat.png" width="100px" height="100px"></a>
+													</div>
+												</div>
+											</div>
+
+										</div> 
+									</div>
+								</div>													
+									<div class="modal-footer">
+										<p></p>
+									</div>
+							</div>
+					</div>
+				<!--</div>-->
+				
+			</header>
+
+			<div class="sbonelo-pic">
+				<img src="images/sboneloumuzi1.png" alt="main image" align="center"/>
+			</div>	
+
+			<div class="index-footer">
+				<footer>
+					<!-- <p><strong>made by <span class="oranged">Sbonelo Mkhize</span> &copy; 2019</strong></p> --><!--
+				</footer>
+			</div> -->
+
+			<script type="text/javascript" src="main.js"></script>
+		</body>	
+</html>
