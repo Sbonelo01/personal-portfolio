@@ -1,167 +1,222 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="main.css">
-		<link rel="stylesheet" type="text/css" href="form.css">
-		<link rel="shortcut icon" href="images/sbo-favicon1.png">
+<title>Sbonelo | portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('images/for_site.jpg');
+  min-height: 100%;
+}
+</style>
+<body>
 
-		<title>home</title>
-	</head>
-		<body>
-			<header>
-				<div class="navigation">
-					<nav>
-						<ul>
-							<button id="myBtn1" onclick="openModal('myModal1')" class="oranged">about<span class="oranged">.</span></button>
-							<button id="myBtn2" onclick="openModal('myModal2')" class="oranged">contact<span class="oranged">.</span></button>
-							<button id="myBtn3" onclick="openModal('myModal3')" class="oranged">work<span class="oranged">.</span></button>
-							<span class="logo"><img src="images/sbo1.png" width="60" height="60"><span>
-						</ul>
-					</nav>
-						<span class="some-text">
-								<h1>Hello,<br/> My Name is Sbonelo.<br/> I'm an aspiring<br/> Web Developer</h1>
-						</span>
-						<span class="social-links" style="position: fixed; top: 37%; right: 1%;">
-							<a href="https://www.facebook.com/sbonelo.mkhize.71"><li><img src="images/facebook.png" height="40px" width="40px"></li><br/></a>
-							<a href="https://twitter.com/deeliightsm"><li><img src="images/twitter.png" height="40px" width="40px"></li><br/></a>
-							<a href="www.linkedin.com/in/sbonelo-mkhize-d"><li><img src="images/linkedin.png" height="40px" width="40px"></li><br/></a>
-							<a href="https://github.com/Sbonelo01"><li><img src="images/cat.png" height="40px" width="40px"></li></a>
-						</span>
-				</div>	
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
 
-				<div id="myModal1" class="modal" style="background-color: #FFA500;">
-					<div class="modal-header oranged">
-						<span class="oranged close" onclick="closeModal('myModal1')">x</span>
-						<!--<span class="modal-logo"><img src="images/sbo1.png" width="47" height="47"></span>-->
-							<h1 style="font-weight: strong">about me</h1>
-								</div>
-									<div class="modal-body">
-							
-										<span class="some-text">
-											<h1 style="color: white; text-shadow: black">Hello,<br/> My Name is Sbonelo.<br/> an aspiring<br/> Web Developer.<br/>A self-taught coder<br/> and a lover of minimalistic <br> design.</h1>
-										</span>
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
 
-										<span>
-							
-										</span>
-									</div>
-									<div class="modal-footer">
-										<p></p>
-									</div>
-							</div>
-					</div>
-				</div>
-			</span>
-		</span>
-			</div>
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
 
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
-			<div id="myModal2" class="modal" style="background-color: #FFA500; height: 150%; width: 90%;%;">
-				<div class="modal-header oranged">
-					<span class="close oranged" onclick="closeModal('myModal2')">x</span>
-						<!--<span class="modal-logo"><img src="images/sbo1.png" width="47" height="47"></span>-->
-							<h1>Hire Me</h1>
-								</div>
-									<div id="form-main">
-  										<div id="form-div">
-    										<form class="form" id="form1">
-      
-      											<p class="name">
-        											<input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name"/>
-      											</p>
-      
-      											<p class="email">
-        											<input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email"/>
-      											</p>
-      
-      											<p class="text">
-        											<textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Tell me more about your project"></textarea>
-      											</p>
-      
-      
-      											<div class="submit">
-        										<input type="submit" value="SEND" id="button-blue"/>
-        										<div class="ease"></div>
-      											</div>
-    										</form>
-  										</div>
-									<div class="modal-footer">
-										<p></p>
-									</div>
-							</div>
-					</div>
-				</div>
-			
-				<div id="myModal3" class="modal" style="background-color: #FFA500; ">
-					<div class="modal-header oraged">
-						<span class="close oranged" onclick="closeModal('myModal3')">x</span>
-						<!--<span class="modal-logo"><img src="images/sbo1.png" width="47" height="47"></span>-->
-							<h1 style="color: orange">work</h1>
-								</div>
-									<div class="modal-body">
-										<div class="grid-container">
-  											<div class="grid-item"><h1><u>Skills</u></h1>
-													<p>JavaScript</p>
-													<p>Node.js</p>
-													<p>HTML5</p>
-													<p>CSS3</p>
-													<div>
-														<h2><u>SoftSkills</u></h2>
-															<p>Good Communicator</p>
-															<p>Teamplayer</p>
-															<p>Optimistic</p>
-															<p>Empathic</p>
-													</div>
-  											</div>
-  											<div class="grid-item"><h1><u>Resume</u></h1>
-												<h4><u>Education</u></h4>
-												<p>Avoca Sec. 2009 - 2013</p>
-												<p>UKZN (POLS & MECS) 2014-15</p>
-												<div>
-													<h4><u>Work Exp.</u></h4>
-													<p>Audi Centre</p>
-													<p>Umuzi.org</p>
-													<p>Innstyl</p>
-													<p>Jeep</p>
-												</div>
-  											</div>
-  			
-  											<div class="grid-item">
-												<h1><u>work</u></h1>
-  												<div class="gitimage">
-													<div class="modal-image-links">
-  														<a href="www.linkedin.com/in/sbonelo-mkhize-d"><img src="images/linkedin.png" width="100px" height="100px"></a>
-													</div>
-													<div>  
-													  <a href="https://github.com/Sbonelo01"><img src="images/cat.png" width="100px" height="100px"></a>
-													</div>
-												</div>
-											</div>
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo"><b>Sbonelo Mkhize</b></h1>
+    <p>Aspiring Fullstack Developer.</p>
+    <img src="images/for_site.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="images/for_site.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button type="submit" onclick="window.open('docs/Sbonelo-Mkhize.pdf')" class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+  </header>
 
-										</div> 
-									</div>
-								</div>													
-									<div class="modal-footer">
-										<p></p>
-									</div>
-							</div>
-					</div>
-				<!--</div>-->
-				
-			</header>
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">Some Of My Work</h2>
+    <hr class="w3-opacity">
 
-			<div class="sbonelo-pic">
-				<img src="images/sboneloumuzi1.png" alt="main image" align="center"/>
-			</div>	
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <a href="https://github.com/Sbonelo01/Memory-Game">
+        <img src="images/memory_game.png" style="width:100%">
+      </a>
+      <a href="https://github.com/Sbonelo01/passwordChecker">
+        <img src="images/password_checker.png" style="width:100%">
+      </a>
+      <a href="https://github.com/Sbonelo01/postgreSql">
+        <img src="images/postgres.png" style="width:100%">
+      </a>
+      </div>
 
-			<div class="index-footer">
-				<footer>
-					<!-- <p><strong>made by <span class="oranged">Sbonelo Mkhize</span> &copy; 2019</strong></p> --><!--
-				</footer>
-			</div> -->
+      <div class="w3-half">
+        <a href="https://github.com/Sbonelo01/travsim_eats">
+        <img src="images/travsim.png" style="width:100%">
+      </a>
+      <a href="https://github.com/Sbonelo01/stringCalculator">
+        <img src="images/string_calculator.png" style="width:100%">
+      </a>
+      <a href="https://github.com/Sbonelo01/simpleCalculator">
+        <img src="images/simple_calculator.png" style="width:100%">
+      </a>  
+        <!--<img src="/w3images/p6.png" style="width:100%">-->
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
 
-			<script type="text/javascript" src="main.js"></script>
-		</body>	
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>
+      I am an aspiring fullstack developer that loves minimalistic design and effecient code. I am currently an Umuzi Web Development recruit and i really am enjoying the experience so far, I have learnt alot and would like to further upskill on alot of technologies going forward. I am really passionate about solving real world problems
+    </p>
+    <h3 class="w3-padding-16">My Skills</h3>
+    <p class="w3-wide">HTML5</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+    </div>
+    <p class="w3-wide">CSS3</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">85%</div>
+    </div>
+    <p class="w3-wide">JavaScript</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div>
+    <p class="w3-wide">Angular</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">80%</div>
+    </div>
+    <p class="w3-wide">Node.js</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%">75%</div>
+    </div>
+    <p class="w3-wide">Docker</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%">75%</div>
+    </div>
+    <p class="w3-wide">PostgreSQL</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:75%">75%</div>
+    </div>
+    <p class="w3-wide">Python</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
+    </div>
+    <p class="w3-wide">Django</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:50%">50%</div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-dark-grey w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">23+</span><br>
+        Repositories
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">15+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">2</span><br>
+        Happy Mentees
+      </div>
+    </div>
+
+    <button type="submit" onclick="window.open('docs/Sbonelo-Mkhize.pdf')" class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24">My Reputation</h3>
+    <img src="images/avator.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Lebo Mokoena.</span> Fullstack Web Developer.</p>
+    <p>Sbonelo is just awesome. His love for code and problem solving grows everyday!</p><br>
+   
+    <img src="images/avator.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Anda Pika.</span> Mentee.</p>
+    <p>Sbonelo has the ability to look at problems and solve them in a very unique way.</p><br>
+    
+    <img src="images/avator.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Vuyile Magwaza.</span> Mentee.</p>
+    <p>Sbonelo has been a really good mentor to me.</p><br>
+  
+
+  <!-- Contact Section -->
+  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+    <h2>Contact Me</h2>
+    <hr class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Johannesburg, RSA</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +2761 069 2364</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: sbonelomkhize15@gmail.com.com</p>
+    </div><br/>
+   
+    <p>MESSAGE ME:</p>
+    <form action="mailto:sbonelomkhize15@gmail.com" method="post">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <a class="fa fa-linkedin w3-hover-opacity" href="https://www.linkedin.com/in/sbonelo-mkhize-d/"></a>
+    <a class="fa fa-github w3-hover-opacity" href="https://github.com/Sbonelo01"></a>
+    <p class="w3-medium">By <a href="https://github.com/Sbonelo01" target="_blank" class="w3-hover-text-green">Sbonelo Mkhize</a></p>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
 </html>
